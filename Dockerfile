@@ -6,8 +6,8 @@ ARG DEBIAN_FRONTEND=noninteractive
 ENV BOSH2_VERSION 2.0.48
 ENV BOSH2_URL https://s3.amazonaws.com/bosh-cli-artifacts/bosh-cli-${BOSH2_VERSION}-linux-amd64
 ENV BOSH2_PACKAGES "openssl openssh-client wget curl jq sshpass rsync make tzdata ca-certificates \
-    build-essential zlibc zlib1g-dev ruby ruby-dev libxslt-dev libxml2-dev libssl-dev libreadline6 \
-    libreadline6-dev libyaml-dev libsqlite3-dev sqlite3"
+    build-essential zlibc zlib1g-dev ruby ruby-dev libxslt-dev libxml2-dev libssl-dev \
+    libreadline-dev libyaml-dev libsqlite3-dev sqlite3"
 
 RUN apt-get update
 RUN apt-get -y upgrade
