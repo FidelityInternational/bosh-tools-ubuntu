@@ -6,7 +6,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 ENV BOSH_VERSION="6.4.1"
 ENV YQ_VERSION="3.2.1"
 ENV PACKAGES "openssl openssh-client wget curl jq sshpass rsync make tzdata ca-certificates \
-build-essential zlibc zlib1g-dev ruby ruby-dev libxslt-dev libxml2-dev libssl-dev \
+build-essential zlibc zlib1g-dev ruby ruby-dev libxslt-dev libxml2-dev libssl-dev  \
 libreadline-dev libyaml-dev libsqlite3-dev sqlite3 git vim"
 
 RUN apt-get update && apt-get -y upgrade && apt-get install -y --no-install-recommends ${PACKAGES} && apt-get clean && rm -rf /var/lib/apt/lists/*
