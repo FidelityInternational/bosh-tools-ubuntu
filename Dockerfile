@@ -3,7 +3,7 @@ FROM ubuntu:20.04
 ## Have to use this due to default interactive tzdata config
 ARG DEBIAN_FRONTEND=noninteractive
 
-ENV BOSH_VERSION="6.4.17"
+ENV BOSH_VERSION="7.5.2"
 ENV YQ_VERSION="4.26.1"
 ENV PACKAGES "openssl openssh-client wget curl jq sshpass rsync make tzdata ca-certificates \
 build-essential zlibc zlib1g-dev ruby ruby-dev libxslt-dev libxml2-dev libssl-dev  \
